@@ -5,37 +5,42 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>bootstrap less2</title>
+    <title>Héroes a domicilio</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-
+    <link href="styles/h2h.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/h2h.css">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 </head>
 
-<body>
+<body id="page-top" class="index">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <body id="page-top" class="index">
-
-    <!-- Navigation -->
+  <!-- Navegacion -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -56,7 +61,7 @@
                         <a href="#about">Sobre héroes</a>
                     </li>
                      <li class="page-scroll">
-                        <a href="#pedido">Pide un héroe</a>
+                        <a href="#beHero">Sé un héroe</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contactanos</a>
@@ -86,7 +91,7 @@
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
+    <!-- Galeria Grid Section -->
     <section id="galeria">
         <div class="container">
             <div class="row">
@@ -123,7 +128,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 galeria-item">
@@ -133,17 +138,17 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/libros.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 galeria-item">
+                 <div class="col-sm-4 galeria-item">
                     <a href="#galeriaModal5" class="galeria-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 galeria-item">
@@ -153,33 +158,55 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
                     </a>
                 </div>
+                 <div class="col-sm-4 galeria-item">
+                    <a href="#galeriaModal7" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 galeria-item">
+                    <a href="#galeriaModal8" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/git.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                 <div class="col-sm-4 galeria-item">
+                    <a href="#galeriaModal9" class="galeria-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/paint.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                </div>
+
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
+    <!-- Pedido Section -->
+    <section class="success"id="pedido">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Sobre los héroes</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <h2>Pide tu héroe</h2>
+                    <hr class="star-primary">
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -197,21 +224,28 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nombre</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <input type="text" class="form-control" placeholder="Name" id="nombre" required data-validation-required-message="Por favor introduce tu nombre.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Telefono</label>
+                                <input type="text" class="form-control" placeholder="Telefono" id="phone" required data-validation-required-message="Por favor introduzca su numero de telefono.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Correo electrónico</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Por favor introduzca su email.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Pedido</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="mensaje" required data-validation-required-message="Por favor introduzca un mensaje."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -227,6 +261,84 @@
             </div>
         </div>
     </section>
+    <!-- About Section -->
+    <section  class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Sobre los héroes</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Nuestro héroes son personas como tú y como yo, pero que son algo especiales, tienen superpoderes y quieren compartirlos.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Echa un vistazo en la galería de heroes y encuentra al que pueda ayudarte!, Están deseando que les llames!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--Be a hero Section-->
+    <section id="beHero">
+	    <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Sé un Verdadero Héroe</h2>
+                    <h5>¡Entra en nuestra liga de superhéroes!</h5>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p >Registrate como héroe y ayuda a los que lo necesitan!</p>
+                </div>
+                <form name="registroHeroe" id="heroForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Apodo</label>
+                                <input type="text" class="form-control" placeholder="Apodo" id="apodo" required data-validation-required-message="Por favor introduce un Apodo.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>SuperPoder</label>
+                                <input type="text" class="form-control" placeholder="Poder" id="Poder" required data-validation-required-message="Por favor introduce un SuperPoder.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Telefono</label>
+                                <input type="text" class="form-control" placeholder="Telefono" id="phone" required data-validation-required-message="Por favor introduzca su numero de telefono.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Correo electrónico</label>
+                                <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Por favor introduzca su email.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
 
     <!-- Footer -->
     <footer class="text-center">
@@ -234,32 +346,29 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Dirección</h3>
-                        <p>Olimpo puerta dorada<br>Rejillas puntiagudas, MO 55555</p>
+                        <h3>Direccion</h3>
+                        <p>Desconocida</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Redes Sociales</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                                <a href="https://plus.google.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://www.twitter.com" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                <a href="https://es.linkedin.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Sobre nosotros</h3>
-                        <p>Queremos poner a tu alcance los héroes que necesitas</p>
+                        <h3>Alicia Arráez & Pablo Cacho</h3>
+                        <p>Ver repositorio en  <a href="https://github.com/alvisand">Git</a></p>
                     </div>
                 </div>
             </div>
@@ -285,7 +394,7 @@
         </a>
     </div>
 
-    <!-- Galeria Modelos -->
+    <!-- Galeria Imágenes -->
     <div class="galeria-modal modal fade" id="galeriaModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -314,12 +423,13 @@
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <a href="#contact">Llamalo!</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <div class="galeria-modal modal fade" id="galeriaModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -348,6 +458,7 @@
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <button type="button" class="btn btn-default" >Llamalo!</button>
                         </div>
                     </div>
                 </div>
@@ -368,7 +479,7 @@
                         <div class="modal-body">
                             <h2>Heroe III</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
                             <p>Este héroe te puede ayudar con este servicio</p>
                             <ul class="list-inline item-details">
                                 <li>Nombre:
@@ -383,6 +494,7 @@
                             </ul>li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <button type="button" class="btn btn-default" >Llamalo!</button>
                         </div>
                     </div>
                 </div>
@@ -403,7 +515,7 @@
                         <div class="modal-body">
                             <h2>Heroe IV</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/libros.png" class="img-responsive img-centered" alt="">
                             <p>Este héroe te puede ayudar con este servicio</p>
                             <ul class="list-inline item-details">
                                 <li>Nombre:
@@ -417,6 +529,7 @@
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <button type="button" class="btn btn-default" >Llamalo!</button>
                         </div>
                     </div>
                 </div>
@@ -437,7 +550,7 @@
                         <div class="modal-body">
                             <h2>Heroe V</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
                                <p>Este héroe te puede ayudar con este servicio</p>
                             <ul class="list-inline item-details">
                                 <li>Nombre:
@@ -451,6 +564,7 @@
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <button type="button" class="btn btn-default" >Llamalo!</button>
                         </div>
                     </div>
                 </div>
@@ -471,7 +585,7 @@
                         <div class="modal-body">
                             <h2>Heroe VI</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
                                <p>Este héroe te puede ayudar con este servicio</p>
                             <ul class="list-inline item-details">
                                 <li>Nombre:
@@ -485,6 +599,112 @@
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <button type="button" class="btn btn-default" >Llamalo!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="galeria-modal modal fade" id="galeriaModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Heroe VII</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                               <p>Este héroe te puede ayudar con este servicio</p>
+                            <ul class="list-inline item-details">
+                                <li>Nombre:
+                                    <strong>Héroe 7</strong>
+                                </li>
+                                <li>Fecha de Alta:
+                                    <strong>Febrero 2015</strong>
+                                </li>
+                                <li>Servicio:
+                                    <strong>Servicio 7</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <button type="button" class="btn btn-default" >Llamalo!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="galeria-modal modal fade" id="galeriaModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Heroe VIII</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                               <p>Este héroe te puede ayudar con este servicio</p>
+                            <ul class="list-inline item-details">
+                                <li>Nombre:
+                                    <strong>Héroe 8</strong>
+                                </li>
+                                <li>Fecha de Alta:
+                                    <strong>Febrero 2015</strong>
+                                </li>
+                                <li>Servicio:
+                                    <strong>Servicio 8</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <button type="button" class="btn btn-default" >Llamalo!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="galeria-modal modal fade" id="galeriaModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Heroe IX</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                               <p>Este héroe te puede ayudar con este servicio</p>
+                            <ul class="list-inline item-details">
+                                <li>Nombre:
+                                    <strong>Héroe 9</strong>
+                                </li>
+                                <li>Fecha de Alta:
+                                    <strong>Febrero 2015</strong>
+                                </li>
+                                <li>Servicio:
+                                    <strong>Servicio 9</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <button type="button" class="btn btn-default" >Llamalo!</button>
                         </div>
                     </div>
                 </div>
@@ -537,6 +757,7 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+    <script src="scripts/h2h.js"></script>
 </body>
 
 </html>

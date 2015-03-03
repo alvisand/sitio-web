@@ -11,10 +11,9 @@
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-    <!--<link href="styles/h2h.css" rel="stylesheet">-->
    
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.less">
     <!-- endbuild -->
     
     <!-- Custom Fonts -->
@@ -210,10 +209,17 @@
                 </div>
                 <div class="col-lg-4">
                     <p>Echa un vistazo en la galería de heroes y encuentra al que pueda ayudarte!, Están deseando que les llames!</p>
+                  <!--<video src="video/BurritoVan.mp4" controls class="img img-responsive" width="640" height="360"></video> 
+                -->
+                <!--<div class="flex-video widescreen"><video src="video/BurritoVan.mp4" width="640" height="360"></video> 
+                -->
+                <!--video {
+  width: 100%    !important;
+  height: auto   !important;
+}-->
                 </div>
-                <div class="video">
-                <video src="video/BurritoVan.mp4" width="640" height="360"></video> 
                 </div>
+               
                 </div>
         </div>
     </section>
@@ -225,11 +231,12 @@
                     <h2>Sé un Verdadero Héroe</h2>
                     <h5>¡Entra en nuestra liga de superhéroes!</h5>
                     <hr class="star-primary">
+                    <p >Registrate como héroe y ayuda a los que lo necesitan!</p>
+             
                 </div>
             </div>
             <div class="row">
-            <p >Registrate como héroe y ayuda a los que lo necesitan!</p>
-              
+             
                 <form name="registroHeroe" id="heroForm">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -259,7 +266,6 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        
                         <br>
                         <div id="success"></div>
                         <div class="row">

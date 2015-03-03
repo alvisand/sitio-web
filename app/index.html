@@ -229,10 +229,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p >Registrate como héroe y ayuda a los que lo necesitan!</p>
-                </div>
-                <form name="registroHeroe" id="heroForm" novalidate>
+            <p >Registrate como héroe y ayuda a los que lo necesitan!</p>
+              
+                <form name="registroHeroe" id="heroForm">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Apodo</label>
@@ -283,21 +282,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-12 text-center">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" >
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nombre</label>
-                                <input type="text" class="form-control" placeholder="Name" id="nombre" required data-validation-required-message="Por favor introduce tu nombre.">
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Por favor introduce tu nombre.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Telefono</label>
-                                <input type="text" class="form-control" placeholder="Telefono" id="phone" required data-validation-required-message="Por favor introduzca su numero de telefono.">
+                                <input type="number" class="form-control" placeholder="Telefono" id="phone" required data-validation-required-message="Por favor introduzca su numero de telefono.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -720,8 +719,7 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/jquery-validate/dist/jquery.validate.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -738,6 +736,8 @@
     <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
     <script src="../bower_components/bootstrap/js/collapse.js"></script>
     <script src="../bower_components/bootstrap/js/tab.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/jquery-validate/dist/jquery.validate.js"></script> 
     <!-- endbuild -->
 
 
@@ -745,7 +745,7 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-    <script src="scripts/h2h.js"></script>
+    
 </body>
 
 </html>
